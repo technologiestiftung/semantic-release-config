@@ -1,64 +1,38 @@
 ![](https://img.shields.io/badge/Built%20with%20%E2%9D%A4%EF%B8%8F-at%20Technologiestiftung%20Berlin-blue)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-# {repo-template}
+# shareable semantic-release-config
 
-<!--
-
-How to:
-
-- You dont need to use every section. Only the ones that apply to your project.
-- Adjust the files on .github/ISSUE_TEMPLATE/* how you need them
-- Adjust the file on .github/CODEOWNERS to match your team
-- If you use staging and main branches use this template for .github/renovate.json
-
-
-```json
-{
-   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "@inpyjamas"
-  ],
-    "baseBranches": [
-    "staging"
-  ]
-}
-```
-
-Bonus:
-
-Use all-contributors
-
-npx all-contributors-cli check
-npx all-contributors-cli add ff6347 doc
-
-You can use it on GitHub just by commeting on PRs and issues:
-
-```
-@all-contributors please add @ff6347 for infrastructure, tests and code
-```
-Read more here https://allcontributors.org/
-
-
-Get fancy shields at https://shields.io
- -->
-
-Add your project description here
-
-## Prerequisites
+shareable semantic-release-config
 
 ## Installation
 
-## Usage or Deployment
+```bash
+npm install @technologiestiftung/semantic-release-config
+```
+
+## Usage
+
+Add file called release.config.js to your repo
+
+```js
+module.exports = {
+	extends: "@technologiestiftung/semantic-release-config",
+};
+```
+
+Overwrite possible keys. See the [semantic-release docs](https://semantic-release.gitbook.io/semantic-release/usage/configuration#extends)
+
+See also this repos [.github/workflows/release.yml](.github/workflows/release.yml)
 
 ## Development
 
-## Tests
-
-## Contributing
+Do your thing. Early stages.
 
 ## Contributors
 
@@ -82,11 +56,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
-## Content Licencing
-
-Texts and content available as [CC BY](https://creativecommons.org/licenses/by/3.0/de/).
-
-Illustrations by Maria Musterfrau, all rights reserved.
+## Content Licensing
 
 ## Credits
 
@@ -117,3 +87,5 @@ Illustrations by Maria Musterfrau, all rights reserved.
 </table>
 
 ## Related Projects
+
+- [github.com/semantic-release/gitlab-config](https://github.com/semantic-release/gitlab-config)
