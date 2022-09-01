@@ -28,7 +28,9 @@ module.exports = {
 
 Overwrite possible keys. See the [semantic-release docs](https://semantic-release.gitbook.io/semantic-release/usage/configuration#extends)
 
-See also this repos [.github/workflows/release.yml](.github/workflows/release.yml)
+See also this repos [.github/workflows/test-and-release.yml](./.github/workflows/test-and-release.yml) how to use this in GitHub Actions.
+
+Needs a Personal Access Token with `repo` scope to be set as `GH_TOKEN` in the repo secrets and a `NPM_TOKEN` with `write` scope.
 
 ## Development
 
