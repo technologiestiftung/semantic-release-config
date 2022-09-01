@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/technologiestiftung/semantic-release-config/compare/v1.0.0...v1.1.0) (2022-09-01)
+
+
+### Features
+
+* Dog food better not depending on installed package ([4650df9](https://github.com/technologiestiftung/semantic-release-config/commit/4650df9b1874d080724ccb7c069135759dfe48c1))
+
 # 1.0.0 (2022-09-01)
 
 
