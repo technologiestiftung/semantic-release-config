@@ -15,7 +15,11 @@ jobs:
       new-release-version: ${{ steps.semantic-release.outputs.new_release_version }}
     steps:
       - uses: actions/checkout@v3
-
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: install deps
+        run: npm i @technologiestiftung/semantic-release-config
       - id: semantic-release
         uses: cycjimmy/semantic-release-action@v2
         with:
