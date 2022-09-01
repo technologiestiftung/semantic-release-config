@@ -1,24 +1,31 @@
 {
-  "name": "@technologiestiftung/semantic-release-config",
-  "version": "1.0.0",
-  "description": "A sharable semantic release config",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "semantic-release",
-    "config"
-  ],
-  "author": "ff6347 <hash@ff6347.email>",
-  "license": "MIT",
-  "dependencies": {
-    "@semantic-release/changelog": "6.0.1",
-    "@semantic-release/commit-analyzer": "9.0.2",
-    "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "8.0.6",
-    "@semantic-release/npm": "9.0.1",
-    "@semantic-release/release-notes-generator": "10.0.3",
-    "@technologiestiftung/semantic-release-config": "^0.1.0"
-  }
+	"name": "@technologiestiftung/semantic-release-config",
+	"version": "1.0.0",
+	"description": "A sharable semantic release config",
+	"main": "index.js",
+	"scripts": {
+		"test": "vitest --run"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"semantic-release",
+		"config"
+	],
+	"author": "ff6347 <hash@ff6347.email>",
+	"license": "MIT",
+	"dependencies": {
+		"@semantic-release/changelog": "6.0.1",
+		"@semantic-release/commit-analyzer": "9.0.2",
+		"@semantic-release/git": "10.0.1",
+		"@semantic-release/github": "8.0.6",
+		"@semantic-release/npm": "9.0.1",
+		"@semantic-release/release-notes-generator": "10.0.3",
+		"@technologiestiftung/semantic-release-config": "^0.1.0",
+		"lodash.merge": "4.6.2"
+	},
+	"devDependencies": {
+		"vitest": "0.22.1"
+	}
 }
