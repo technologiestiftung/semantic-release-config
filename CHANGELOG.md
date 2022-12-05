@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/technologiestiftung/semantic-release-config/compare/v1.1.0...v1.1.1) (2022-12-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @technologiestiftung/semantic-release-config to v1 ([971511b](https://github.com/technologiestiftung/semantic-release-config/commit/971511b165f6c080611a2be10291c20b33360268))
+
 # [1.1.0](https://github.com/technologiestiftung/semantic-release-config/compare/v1.0.0...v1.1.0) (2022-09-01)
 
 
