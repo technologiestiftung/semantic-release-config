@@ -22,7 +22,12 @@ describe("basic test", () => {
 			    "@semantic-release/changelog",
 			    "@semantic-release/npm",
 			    "@semantic-release/git",
-			    "@semantic-release/github",
+			    [
+			      "@semantic-release/github",
+			      {
+			        "successComment": false,
+			      },
+			    ],
 			  ],
 			}
 		`);
