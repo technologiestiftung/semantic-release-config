@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/technologiestiftung/semantic-release-config/compare/v1.1.1...v1.2.0) (2022-12-08)
+
+
+### Features
+
+* **SILENCE!:** Disable commenting to github ([81cfdb7](https://github.com/technologiestiftung/semantic-release-config/commit/81cfdb7282de6e01af3fde220176e75302074a4c))
+
 ## [1.1.1](https://github.com/technologiestiftung/semantic-release-config/compare/v1.1.0...v1.1.1) (2022-12-05)
 
 
