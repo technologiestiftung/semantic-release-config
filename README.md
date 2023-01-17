@@ -31,7 +31,7 @@ If you use a staging/production environment, where staging is the branch staging
 
  branches: [
         { name: "main" },
-        { name: "staging", prerelease: true }, // `prerelease` is built with the template `${name.replace(/^pre\\//g, "")}`
+        { name: "staging", channel: "pre/rc", prerelease: "rc" }, // `prerelease` is built with the template `${name.replace(/^pre\\//g, "")}`
     ],
 plugins: [
 		[
