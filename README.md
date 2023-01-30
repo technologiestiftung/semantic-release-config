@@ -1,7 +1,9 @@
 ![](https://img.shields.io/badge/Built%20with%20%E2%9D%A4%EF%B8%8F-at%20Technologiestiftung%20Berlin-blue)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # shareable semantic-release-config
@@ -26,7 +28,6 @@ module.exports = {
 
 If you use a staging/production environment, where staging is the branch staging and production is deployed from main it is wise to add an additional package to do some backmerging. Install it using npm `npm i -D @saithodev/semantic-release-backmerge` and add it as a plugin to your config, referencing the right branches.
 
-
 ```
 
  branches: [
@@ -37,7 +38,7 @@ plugins: [
 		[
 			"@saithodev/semantic-release-backmerge",
 			{
-				branch: ["staging"],
+				branches: ["staging",{from: "main", to: "staging"}],
 				backmergeStrategy: "merge",
 			},
 		],
