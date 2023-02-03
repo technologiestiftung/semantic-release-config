@@ -38,7 +38,7 @@ plugins: [
 		[
 			"@saithodev/semantic-release-backmerge",
 			{
-				branches: ["staging",{from: "main", to: "staging"}],
+				branches: [{from: "main", to: "staging"}],
 				backmergeStrategy: "merge",
 			},
 		],
