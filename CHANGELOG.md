@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/technologiestiftung/semantic-release-config/compare/v1.2.1...v1.2.2) (2023-08-10)
+
+
+### Bug Fixes
+
+* Remove node16 from test runs ([deeac42](https://github.com/technologiestiftung/semantic-release-config/commit/deeac42facae72a9442a5d542b317952248e5ffe))
+
 ## [1.2.1](https://github.com/technologiestiftung/semantic-release-config/compare/v1.2.0...v1.2.1) (2023-04-17)
 
 
