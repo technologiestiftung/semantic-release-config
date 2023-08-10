@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [18.x, 20.x]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -24,6 +24,7 @@ jobs:
       - run: npm ci
       - run: npm t
       - run: npm run build --if-present
+      - run: npx semantic-release --dry-run
 
   release:
     name: semantic-release
@@ -39,12 +40,14 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version-file: .nvmrc
       - run: npm ci
       - id: semantic-release
-        uses: cycjimmy/semantic-release-action@v3
-        with:
-          semantic_version: 18
+        run: npx semantic-release
+        # Note: Version 20.0.0 of semantic-release and later is currently incompatible with cycjimmy/semantic-release-action, since it requires Node.js 18. GitHub does not provide this environment yet for JavaScript actions.
+        # uses: cycjimmy/semantic-release-action@v3
+        # with:
+        #   semantic_version: 20
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
