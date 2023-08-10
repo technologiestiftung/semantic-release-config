@@ -43,9 +43,11 @@ jobs:
           node-version-file: .nvmrc
       - run: npm ci
       - id: semantic-release
-        uses: cycjimmy/semantic-release-action@v3
-        with:
-          semantic_version: 20
+        run: npx semantic-release
+        # Note: Version 20.0.0 of semantic-release and later is currently incompatible with cycjimmy/semantic-release-action, since it requires Node.js 18. GitHub does not provide this environment yet for JavaScript actions.
+        # uses: cycjimmy/semantic-release-action@v3
+        # with:
+        #   semantic_version: 20
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
