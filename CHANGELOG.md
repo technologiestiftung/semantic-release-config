@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/technologiestiftung/semantic-release-config/compare/v1.2.3...v1.2.4) (2023-09-25)
+
+
+### Bug Fixes
+
+* **deps:** update semantic-release monorepo ([fd7c9fe](https://github.com/technologiestiftung/semantic-release-config/commit/fd7c9fe1c095c5ab45af0dda58c5668d02c26aae))
+
 ## [1.2.3](https://github.com/technologiestiftung/semantic-release-config/compare/v1.2.2...v1.2.3) (2023-08-10)
 
 

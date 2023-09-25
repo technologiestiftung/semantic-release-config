@@ -1,6 +1,6 @@
 {
 	"name": "@technologiestiftung/semantic-release-config",
-	"version": "1.2.3",
+	"version": "1.2.4",
 	"description": "A sharable semantic release config",
 	"main": "index.js",
 	"scripts": {
