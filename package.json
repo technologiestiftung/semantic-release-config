@@ -26,7 +26,7 @@
 		"lodash.merge": "4.6.2"
 	},
 	"devDependencies": {
-		"semantic-release": "23.0.4",
+		"semantic-release": "23.0.5",
 		"vitest": "1.4.0"
 	}
 }
