@@ -22,7 +22,7 @@ Add file called release.config.js to your repo
 
 ```js
 module.exports = {
-	extends: "@technologiestiftung/semantic-release-config",
+  extends: '@technologiestiftung/semantic-release-config',
 };
 ```
 
@@ -30,7 +30,8 @@ If you use a staging/production environment, where staging is the branch staging
 
 ```
 
- branches: [
+module.exports = {
+  branches: [
         { name: "main" },
         { name: "staging", channel: "pre/rc", prerelease: "rc" }, // `prerelease` is built with the template `${name.replace(/^pre\\//g, "")}`
     ],
@@ -38,11 +39,12 @@ plugins: [
 		[
 			"@saithodev/semantic-release-backmerge",
 			{
-				branches: [{from: "main", to: "staging"}],
+				backmergeBranches: [{from: "main", to: "staging"}],
 				backmergeStrategy: "merge",
 			},
 		],
 	],
+  }
 ```
 
 Overwrite possible keys. See the [semantic-release docs](https://semantic-release.gitbook.io/semantic-release/usage/configuration#extends). If operating with protected branches, you can need to set the option `persist-credentials: false` in your workflow file on the `actions/checkout@v3` step.
